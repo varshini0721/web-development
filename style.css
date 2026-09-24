@@ -1,0 +1,190 @@
+:root {
+    --primary: #0B1F3A;
+    --accent: #D4AF37;
+    --background: #F4F6F8;
+    --text: #1F2937;
+    --white: #FFFFFF;
+    --light-gold: #F7E7A9;
+    --border: #D9DEE5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+nav {
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #0B1F3A,
+        #173B67,
+        #D4AF37
+    );
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(11, 31, 58, 0.25);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 11px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #B8962E;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    background-color: var(--white);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: var(--primary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 12px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #FFF9E6;
+}
+
+form {
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+input,
+select {
+    padding: 9px;
+    margin: 6px;
+    border: 1px solid #C7CDD4;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.card {
+    background-color: white;
+    padding: 18px;
+    margin: 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: var(--primary);
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
