@@ -56,6 +56,20 @@ bookLinks.forEach(function(link) {
         }
     });
 });
+// 3. Activity 5: Dynamic "About IPL Match" content
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const demoParagraph = document.getElementById("demo");
+
+    demoParagraph.textContent =
+        "IPL 2026 brings together the country's top cricketing talent " +
+        "for a high-octane season of matches across major stadiums in " +
+        "India. From the opening clash to the final showdown, fans can " +
+        "expect thrilling contests, packed stands, and unforgettable " +
+        "moments throughout the tournament.";
+
+});
 const bookingForm = document.querySelector("#booking form");
 bookingForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -81,13 +95,4 @@ bookingForm.addEventListener("submit", function(event) {
     setTimeout(function() {
         message.remove();
     }, 2000);
-});
-document.addEventListener("DOMContentLoaded", function() {
-
-    const paragraph =
-        document.getElementById("demo");
-
-    paragraph.textContent =
-        "IPL 2026 is a cricket tournament featuring popular teams competing against each other.";
-
 });
